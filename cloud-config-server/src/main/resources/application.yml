@@ -1,0 +1,24 @@
+#CLOUD CONFIG SERVER
+server:
+  port: 9296
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/pkbhavsar1/config-server"
+          clone-on-start: true
+  
+  
+#  #    config:#      server:#        git:#          uri: "https://github.com/pkbhavsar1/config-server"
+#          clone-on-start: true
+  
+  
+  
+#    server:
+#      git:
+#        uri: "https://github.com/pkbhavsar1/config-server"
+#        clone_on_start: true
